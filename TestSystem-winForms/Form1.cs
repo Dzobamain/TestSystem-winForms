@@ -50,7 +50,7 @@ namespace TestSystem_winForms
             }
             else
             {
-                MessageBox.Show("Number of correct answers: " + correctAnswersCount + " із " + questions.Length);
+                MessageBox.Show("Number of correct answers: " + correctAnswersCount + "/" + questions.Length);
                 progressBar.Value = 0;
                 currentQuestion = 0;
                 correctAnswersCount = 0;
@@ -77,6 +77,11 @@ namespace TestSystem_winForms
             CheckAnswers();
             currentQuestion++;
             LoadQuestion();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

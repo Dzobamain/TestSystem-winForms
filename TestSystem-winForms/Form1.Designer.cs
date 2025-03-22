@@ -32,7 +32,6 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBoxAnswer = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.buttonNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -40,7 +39,7 @@
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
-            this.labelQuestion.Location = new System.Drawing.Point(12, 12);
+            this.labelQuestion.Location = new System.Drawing.Point(12, 26);
             this.labelQuestion.Name = "labelQuestion";
             this.labelQuestion.Size = new System.Drawing.Size(35, 13);
             this.labelQuestion.TabIndex = 1;
@@ -49,18 +48,19 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(121, 29);
+            this.radioButton1.Location = new System.Drawing.Point(15, 42);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(85, 17);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(121, 52);
+            this.radioButton2.Location = new System.Drawing.Point(15, 65);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(85, 17);
             this.radioButton2.TabIndex = 3;
@@ -71,7 +71,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(121, 75);
+            this.radioButton3.Location = new System.Drawing.Point(15, 88);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(85, 17);
             this.radioButton3.TabIndex = 4;
@@ -79,23 +79,16 @@
             this.radioButton3.Text = "radioButton3";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // textBoxAnswer
-            // 
-            this.textBoxAnswer.Location = new System.Drawing.Point(15, 28);
-            this.textBoxAnswer.Name = "textBoxAnswer";
-            this.textBoxAnswer.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAnswer.TabIndex = 5;
-            // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(212, 4);
+            this.progressBar.Location = new System.Drawing.Point(15, 4);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(576, 19);
+            this.progressBar.Size = new System.Drawing.Size(773, 19);
             this.progressBar.TabIndex = 6;
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(15, 114);
+            this.buttonNext.Location = new System.Drawing.Point(15, 111);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(75, 23);
             this.buttonNext.TabIndex = 7;
@@ -110,7 +103,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.progressBar);
-            this.Controls.Add(this.textBoxAnswer);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -128,7 +120,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.TextBox textBoxAnswer;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button buttonNext;
     }
