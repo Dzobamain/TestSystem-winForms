@@ -78,11 +78,6 @@ namespace TestSystem_winForms
             currentQuestion++;
             LoadQuestion();
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
