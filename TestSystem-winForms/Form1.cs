@@ -14,18 +14,18 @@ namespace TestSystem_winForms
 {
     public partial class Form1 : Form
     {
-        private string[] questions = { "Столиця Франції?", "Скільки континентів у світі?", "Найвища гора?" };
+        private string[] questions = { "What is the capital of France?", "How many continents are there in the world?", "What is the highest mountain?" };
 
         private string[][] answers = {
-            new string[] { "Париж", "Берлін", "Мадрид" },
+            new string[] { "Paris", "Berlin", "Barselona" },
             new string[] { "5", "6", "7" },
-            new string[] { "Еверест", "Тест", "Арарат" }
+            new string[] { "Everest", "Test", "Ararat" }
         };
 
-        private int[] right_answers = { 0, 1, 0 }; // Індекси правильних відповідей
+        private int[] right_answers = { 0, 1, 0 };
 
         private int currentQuestion = 0;
-        private int correctAnswersCount = 0; // Лічильник правильних відповідей
+        private int correctAnswersCount = 0;
 
         public Form1()
         {
@@ -50,7 +50,7 @@ namespace TestSystem_winForms
             }
             else
             {
-                MessageBox.Show("Тест завершено! Кількість правильних відповідей: " + correctAnswersCount + " із " + questions.Length);
+                MessageBox.Show("Number of correct answers: " + correctAnswersCount + " із " + questions.Length);
                 progressBar.Value = 0;
                 currentQuestion = 0;
                 correctAnswersCount = 0;
